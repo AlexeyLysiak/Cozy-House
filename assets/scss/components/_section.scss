@@ -33,9 +33,21 @@
   }
 }
 .footer {
-  background-image: url('/assets/img/footer-bg.png');
+  background-image: url("../img/footer-bg.png");
   position: relative;
   min-height: 360px;
+  .section-background { 
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   &__content { 
     align-items: center;
     .pad {
@@ -60,7 +72,7 @@
           content: '';
           width: 40px;
           height: 26px;
-          background-image: url('/assets/img/envelope.png');
+          background-image: url('../img/envelope.png');
           top: 13px;
           left: 0px;
         }
@@ -72,7 +84,7 @@
           content: '';
           width: 40px;
           height: 32px;
-          background-image: url("/assets/img/telephone.png");
+          background-image: url("../img/telephone.png");
           top: 8px;
           left: 0px;
         }
@@ -106,8 +118,8 @@
           content: '';
           width: 26px;
           height: 36px;
-          background-image: url('/assets/img/pin.png');
-          top: -5px;
+          background-image: url('../img/pin.png');
+          top: 5px;
           left: 0;
         }        
       }
@@ -120,6 +132,7 @@
       max-width: 300px;
       top: 30px;
     }
+    
   }
   &__title {
     color: #ffffff;
